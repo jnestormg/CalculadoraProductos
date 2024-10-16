@@ -20,11 +20,11 @@ const OrderContents = ({order, removeItem}: OrderType) => {
                          rounded-[10px] shadow-xl hover:bg-slate-100" 
                         key={item.id}>
                             <div>
-                            <p> {item.name}  ${item.price}</p>
-                            <p className="font-black">Cantidad: {item.quantity}
+                            <p className="font-black"> {item.name}  ${item.price}</p>
+                            <p >Cantidad: {item.quantity}
                                  
                             </p>
-                            <p className="font-black"> Subtotal: {item.price*item.quantity}</p>
+                            <p > Subtotal: {item.price*item.quantity}</p>
                             </div>
                             <button 
                             onClick={()=>removeItem(item.id)}

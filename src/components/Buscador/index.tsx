@@ -23,7 +23,6 @@ const Buscador = ({ datos, datos1, setDatos }: MenuItemProps) => {
     }
 
     const mostrarTodo = () => {
-        console.log("ndcui");
         setDatos(datos1)
     }
 
@@ -35,10 +34,10 @@ const Buscador = ({ datos, datos1, setDatos }: MenuItemProps) => {
                         placeholder="Buscar..." value={valor} onChange={handleText} />
                     <button onClick={() => mostrarTodo()}
                         className="absolute right-2 top-4
-                         bg-stone-500 rounded-full h-6 w-6 text-yellow-50"  >X</button>
+                         bg-slate-400 rounded-full h-6 w-6 text-yellow-50"  >X</button>
                 </div>
                 <button onClick={() => serarch()}
-                    className="bg-slate-600 text-white 
+                    className="bg-teal-800 text-white 
                 p-3 rounded-md hover:bg-slate-400"  >Buscar</button>
             </div>
 
