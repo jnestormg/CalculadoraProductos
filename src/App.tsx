@@ -17,9 +17,9 @@ function App() {
       <header className='bg-teal-800 py-5'>
         <h1 className='text-center text-4xl text-white'>Shop</h1>
       </header>
-      <main className="max-w-7xl mx-auto py-20 grid md:grid-cols-2 xl gap-5 ">
-        <div>
-          <h2 className="font-bold text-4xl mb-2">Menú</h2>
+      <main className="max-w-7xl mx-auto py-20 grid md:grid-cols-2 xl gap-5 p-8 ">
+        <div className="p-5 m-9">
+          <h2 className="font-bold text-4xl mb-2 ">Menú</h2>
 
           <Buscador
             datos={datos}

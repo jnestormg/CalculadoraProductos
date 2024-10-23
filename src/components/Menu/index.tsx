@@ -1,19 +1,20 @@
-import type {MenuITem} from "../../types"
-type ItemsProps={
-    item: MenuITem,
-    addItem: (item: MenuITem) => void
+import type { MenuITem } from "../../types"
+type ItemsProps = {
+  item: MenuITem,
+  addItem: (item: MenuITem) => void
 }
 
-const Menu = ({item, addItem}: ItemsProps) => {
+const Menu = ({ item, addItem }: ItemsProps) => {
   return (
-
-    <button
-    onClick={()=>addItem(item)}
-    className="border-2 border-teal-900 w-full p-3
+    <div className="">
+      <button
+        onClick={() => addItem(item)}
+        className="border-2 border-teal-900 w-[90%] p-5
      hover:bg-teal-800 hover:text-white flex justify-between mb-2 rounded-md">
         <h1>{item.name}</h1>
-        <h2 className="font-bold">{item.price}</h2>
-    </button>
+        <h2 className="font-bold">${item.price}</h2>
+      </button>
+    </div>
   )
 }
 

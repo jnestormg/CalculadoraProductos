@@ -31,7 +31,7 @@ const Buscador = ({ datos, datos1, setDatos }: MenuItemProps) => {
             <div className="flex justify-between p-5">
                 <div className="relative w-[70%]">
                     <input className="border border-slate-500 w-full m-1 h-12 p-4 rounded-md"
-                        placeholder="Buscar..." value={valor} onChange={handleText} />
+                        placeholder="Nombre del producto..." value={valor} onChange={handleText} />
                     <button onClick={() => mostrarTodo()}
                         className="absolute right-2 top-4
                          bg-slate-400 rounded-full h-6 w-6 text-yellow-50"  >X</button>
