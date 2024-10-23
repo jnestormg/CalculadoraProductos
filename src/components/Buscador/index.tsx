@@ -24,6 +24,7 @@ const Buscador = ({ datos, datos1, setDatos }: MenuItemProps) => {
 
     const mostrarTodo = () => {
         setDatos(datos1)
+        setValor("")
     }
 
     return (
